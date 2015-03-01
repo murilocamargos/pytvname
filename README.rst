@@ -4,7 +4,7 @@ PyTvName
 
 .. _pytvname-synopsis:
 
-PyTvName provides a python class to process names of tv shows into a
+PyTvName provides a python library to process tv shows names into a
 specific format given by the user.
 
 .. contents::
