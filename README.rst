@@ -10,8 +10,20 @@ specific format given by the user.
 .. contents::
     :local:
 
+Clone and Installation
+======================
+
+You can download the git version::
+    
+    $ git clone https://github.com/murilocamargos/pytvname.git
+
+With the files in a directory of your preference do::
+
+    $ cd pytvname
+    $ python setup.py install
+
 Usage
-=============
+=====
 
 Almost all functions are documented and the usage is very simple.::
 
