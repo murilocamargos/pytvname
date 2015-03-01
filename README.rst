@@ -25,7 +25,7 @@ The best way to learn some ways to utilize this package is to look at the
 examples at `pytvname_sample.py`_
 
 
-.. _pytvname_sample.py: URL/bin/pytvname_sample.py
+.. _pytvname_sample.py: bin/pytvname_sample.py
 
 .. _pytvname-unittests:
 

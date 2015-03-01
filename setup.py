@@ -28,8 +28,8 @@ setup(
     version=get_version('pytvname'),
     author='Murilo Camargos',
     author_email='murilo.camargosf@gmail.com',
-    #url='https://github.com/eduardocereto/pyboleto',
-    #download_url='http://pypi.python.org/pypi/pyboleto',
+    url='https://github.com/murilocamargos/pytvname',
+    #download_url='http://pypi.python.org/pypi/',
     packages=['pytvname','tests'],
     package_data={
         '': ['LICENSE'],
