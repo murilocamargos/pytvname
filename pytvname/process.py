@@ -272,6 +272,8 @@ def applyfuncs(value, funcs):
         'title': str.title,
         'zfone': lambda x: str(int(x)).zfill(1),
         'zftwo': lambda x: str(int(x)).zfill(2),
+        'rmspc': lambda x: x.replace(' ', ''),
+        'dtspc': lambda x: x.replace(' ', '.')
     }
 
     for func in funcs:
@@ -319,7 +321,12 @@ def prc(name, format = '{showName} S{seasonNum}E{episodeNum} {teamName}'):
     # - teamName      (e.g. LOL)
     # - quality       (e.g. HDTV)
 
-    keywords = info(name)
+    keywords = None
+    if type(name) == dict:
+        keywords = name
+    elif type(name) == str:
+        keywords = info(name)
+    
 
     if not keywords:
         return None
@@ -343,4 +350,4 @@ def prc(name, format = '{showName} S{seasonNum}E{episodeNum} {teamName}'):
 
             prcname = prcname.replace('{' + keyfunc + '}', value)
 
-    return prcname
+    return prcname.strip()
